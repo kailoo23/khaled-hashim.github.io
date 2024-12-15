@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaled Mohamed Abou-Hashim - Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1a1a1d;
+            color: #c9c9c9;
+            transition: background 0.3s, color 0.3s;
+        }
+        header {
+            background: #2b2b30;
+            color: #ff2e63;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            animation: fadeInDown 1.5s;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ff2e63;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #08d9d6;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin: 20px 0;
+            padding: 30px;
+            background: #2b2b30;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        #projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        #projects ul li {
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #444;
+            border-radius: 8px;
+            transition: transform 0.3s, background 0.3s;
+        }
+        #projects ul li:hover {
+            transform: scale(1.02);
+            background: #3a3a42;
+        }
+        footer {
+            text-align: center;
+            background: #2b2b30;
+            color: #ff2e63;
+            padding: 20px 0;
+        }
+        h2 {
+            color: #ff2e63;
+            font-size: 2rem; /* Adjust size to match other headlines */
+        }
+        a {
+            color: #08d9d6;
+        }
+        a:hover {
+            color: #ff2e63;
+        }
+
+        /* About Me Section Styling */
+        #about {
+            background: #2b2b30;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            margin: 20px 0;
+            animation: fadeIn 1.2s ease-in-out;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #about h2 {
+            font-size: 2rem; /* Reduced size to match other section headlines */
+            color: #ff2e63;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #c9c9c9;
+            margin-top: 10px;
+            font-weight: 400;
+            text-align: justify;
+        }
+
+        /* Light Theme */
+        .light-theme {
+            background: #f4f4f4;
+            color: #333;
+        }
+        .light-theme header {
+            background: #fff;
+            color: #333;
+        }
+        .light-theme nav ul li a {
+            color: #ff2e63;
+        }
+        .light-theme section {
+            background: #fff;
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .light-theme footer {
+            background: #fff;
+            color: #333;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Khaled Mohamed Abou-Hashim</h1>
+        <p>Back-End Developer | DevOps Enthusiast | Flutter Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+		
+        <br><button id="themeToggle" style="background: #ff2e63; color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 1rem; border-radius: 5px;">Light Theme</button>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Motivated Back-End Software Developer with expertise in Java, Spring Boot, and API development. Experienced in building enterprise-grade systems and integrating DevOps practices for scalability and efficiency. Passionate about mobile development using Flutter and delivering seamless user experiences.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Backend:</strong> Java, Spring Boot, REST APIs, SQL Server</li><br>
+                <li><strong>DevOps:</strong> Docker, Kubernetes, CI/CD Pipelines</li><br>
+                <li><strong>Frontend/Mobile:</strong> Flutter, Dart, Firebase</li><br>
+                <li><strong>Tools:</strong> Git, Postman, Jenkins</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Task Management System</strong>: A backend application handling tasks with Spring Boot APIs, JWT security, and validation. <a href="https://github.com/kailoo23/task-management-system" target="_blank">View</a></li>
+                <li><strong>Library Management System</strong>: Secure, scalable web app using Spring Boot and SQL Server. <a href="https://github.com/kailoo23/library-management-system" target="_blank">View</a></li>
+                <li><strong>JMS-SER-EJB</strong>: Java Message Service integrated with Servlets and EJB. <a href="https://github.com/kailoo23/JMS-SER-EJB" target="_blank">View</a></li>
+                <li><strong>Automated Grass Cutter Controller (Graduation Project)</strong>: Flutter app with real-time Firebase, Google Maps API, and CRUD operations. <a href="#" target="_blank">View</a></li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:kabouhashim@gmail.com">kabouhashim@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/kailoo23" target="_blank">github.com/kailoo23</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/khaled-mohamed-abou-hashim" target="_blank">linkedin.com/in/khaled-mohamed-abou-hashim</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Khaled Mohamed Abou-Hashim. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const themeToggleButton = document.getElementById('themeToggle');
+        let isDarkTheme = true;
+
+        themeToggleButton.addEventListener('click', () => {
+            isDarkTheme = !isDarkTheme;
+            document.body.classList.toggle('light-theme', !isDarkTheme);
+            themeToggleButton.textContent = isDarkTheme ? 'Light Theme' : 'Dark Theme';
+        });
+    </script>
+</body>
+</html>
